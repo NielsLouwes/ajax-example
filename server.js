@@ -11,8 +11,7 @@ app.use(cors());
 const response = "Initial content loaded.";
 
 // New response for the additional content
-const additionalResponse =
-  "This is the additional content loaded via Ajax. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laborum debitis, recusandae ex voluptates blanditiis ipsam aliquam? Voluptas ex doloremque nisi cupiditate modi, illo quis asperiores laudantium esse molestias. Amet repellendus aspernatur libero nisi dolores unde, pariatur ex doloribus eveniet laboriosam saepe cumque distinctio quam, alias recusandae omnis atque aperiam commodi non possimus deleniti error excepturi accusantium? Explicabo delectus expedita illo deserunt dolores laudantium quibusdam corrupti mollitia, beatae porro sequi sint iste facere adipisci libero cupiditate doloribus obcaecati error praesentium assumenda repellendus, tenetur rerum! Provident deserunt expedita earum, dolore voluptatem iste sit asperiores autem beatae amet, mollitia et perferendis ea.";
+const additionalResponse = "English, 204 pages, released Oct 10, 2023";
 
 let loadedContent = false;
 
