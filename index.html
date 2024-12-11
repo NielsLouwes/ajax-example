@@ -7,8 +7,8 @@
   </head>
   <body>
     <div id="ajax-test">
-      <p>Ajax Example</p>
-      <p>Hiking with Nietzsche Becoming Who You Are</p>
+      <h1>Ajax Example</h1>
+      <h2>Hiking with Nietzsche Becoming Who You Are</h2>
     </div>
     <button id="loadMoreBtn" style="margin-top: 20px" onclick="loadDoc()">
       Load more
@@ -22,9 +22,14 @@
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
           if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("ajax-test").innerHTML += this.responseText;
+            console.log("this.responseXML", this.responseXML);
+            const doc = this.responseXML;
+
+            const el = document.querySelector("div#ajax-test");
+            el.appendChild(doc.body);
           }
         };
+        xhttp.responseType = "document";
         xhttp.open("GET", "http://localhost:5500/more", true);
         xhttp.send();
       }
